@@ -1,0 +1,29 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa4b2;
+  --accent:#7c5cff;
+  --text:#e6eef8;
+}
+
+body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto; margin:0; background:var(--bg); color:var(--text)}
+.app{max-width:1100px; margin:32px auto; padding:20px}
+.header h1{margin:0 0 12px}
+.main{display:flex; gap:20px}
+.left{flex:1}
+.right{flex:1; background:var(--card); padding:16px; border-radius:8px}
+.editor textarea{width:100%; padding:10px; border-radius:6px; border:1px solid #223; background:#071021; color:var(--text)}
+.settings{display:flex; gap:12px; margin-top:12px}
+.settings label{display:block; font-size:12px; color:var(--muted); margin-bottom:6px}
+.settings select{padding:8px; border-radius:6px; background:#dfc649; color:var(--text); border:1px solid #223}
+.controls{margin-top:12px; display:flex; gap:8px}
+.controls button{padding:8px 12px; border-radius:6px; background:var(--accent); color:white; border:none}
+.output{white-space:pre-wrap; color:var(--text)}
+.output.empty{color:var(--muted)}
+.output pre{background:#e1aa28; padding:12px; border-radius:6px}
+.error{color:#ff8a8a; margin-top:8px}
+
+.output .output-actions{display:flex; gap:8px; margin-bottom:8px}
+.output .output-actions button{padding:6px 10px; border-radius:6px; background:#2b3646; color:var(--text); border:1px solid #223}
+.output.empty .hint{color:var(--muted); margin-top:8px}
+.output.empty ul{margin:8px 0 0 18px; color:var(--muted)}
